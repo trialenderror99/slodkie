@@ -3,47 +3,276 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kreem — demo</title>
+  <title>Ciasta Joasi — domowe wypieki na zamówienie</title>
+  <meta name="description" content="Domowe ciasta i torty na zamówienie. Wypieki z pasji, na każdą okazję — od urodzin po święta." />
+
+  <!-- Tip: You can swap this for any Google Font later -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Optional: Add a favicon later -->
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1 class="logo">Kreem • demo</h1>
-      <nav class="main-nav">
-        <a href="#">Słodycze</a>
-        <a href="#">Torty</a>
-        <a href="#">O nas</a>
-        <a href="#">Kontakt</a>
+  <!-- ========== TOP BAR / HEADER ========== -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <!-- Tip: Replace text logo with an image later if you want -->
+      <a class="logo" href="#top" aria-label="Strona główna">Ciasta Joasi</a>
+
+      <nav class="main-nav" aria-label="Główna nawigacja">
+        <!-- Tip: Keep anchor links for a simple one-page site -->
+        <a href="#oferta">Oferta</a>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#zamowienia">Zamówienia</a>
+        <a class="nav-cta" href="#kontakt">Kontakt</a>
       </nav>
     </div>
   </header>
 
+  <!-- ========== HERO ========== -->
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="hero-text">
-        <h2>Ręcznie robione torty i ciasta</h2>
-        <p>Wyjątkowe smaki, świeże składniki.</p>
+        <p class="kicker">Domowe wypieki z serca</p>
+        <h1>Torty i ciasta na zamówienie — tak, jak w domu.</h1>
+        <p class="lead">
+          Piekę z pasji, która towarzyszy mi od zawsze. Każdy wypiek przygotowuję ręcznie, z uważnością na smak,
+          świeżość i detale — bez przemysłowych skrótów.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#zamowienia">Jak zamówić</a>
+          <a class="btn" href="#galeria">Zobacz galerię</a>
+        </div>
+
+        <ul class="hero-bullets" aria-label="Najważniejsze informacje">
+          <li>Na urodziny, święta i wyjątkowe okazje</li>
+          <li>Klasyki i autorskie smaki</li>
+          <li>Chętnie podejmuję nowe wyzwania</li>
+        </ul>
       </div>
-      <div class="hero-image">
-        <img src="assets/images/hero.jpg" alt="Ciasto">
+
+      <div class="hero-media">
+        <!-- IMPORTANT: Put your real image here -->
+        <!-- Tip: Use a 1400–2000px wide photo for the hero -->
+        <img src="assets/images/hero.jpg" alt="Domowy tort udekorowany owocami" />
       </div>
     </div>
   </section>
 
-  <main class="wrap">
-    <h3>Wybrane wypieki</h3>
-    <div class="grid">
-      <article class="card"><img src="assets/images/piece1.jpg" alt=""><h4>Czekoladowy</h4></article>
-      <article class="card"><img src="assets/images/piece2.jpg" alt=""><h4>Waniliowy</h4></article>
-      <article class="card"><img src="assets/images/piece3.jpg" alt=""><h4>Owocowy</h4></article>
+  <!-- ========== TRUST STRIP ========== -->
+  <section class="trust">
+    <div class="wrap trust-inner">
+      <!-- Tip: These are lightweight “proof points”. Edit freely. -->
+      <div class="trust-item">
+        <strong>Ręczna praca</strong>
+        <span>Każdy tort powstaje od podstaw</span>
+      </div>
+      <div class="trust-item">
+        <strong>Domowy charakter</strong>
+        <span>Smak, który kojarzy się z ciepłem domu</span>
+      </div>
+      <div class="trust-item">
+        <strong>Na zamówienie</strong>
+        <span>Dopasowanie do okazji i preferencji</span>
+      </div>
     </div>
+  </section>
+
+  <main>
+    <!-- ========== OFFER / SERVICES ========== -->
+    <section class="section" id="oferta">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Oferta</h2>
+          <p>
+            Od lekkich, owocowych wypieków po klasyczne, bogate smaki — przygotuję słodkości, które pasują do Twojej okazji.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Torty okolicznościowe</h3>
+            <p>
+              Urodziny, rocznice, baby shower, komunie i inne ważne momenty. Dekoracje dobieram do stylu wydarzenia — subtelnie lub odważnie.
+            </p>
+            <ul>
+              <li>Klasyczne biszkopty i kremy</li>
+              <li>Owoce sezonowe i czekoladowe akcenty</li>
+              <li>Możliwość dopasowania słodkości</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Ciasta domowe</h3>
+            <p>
+              Serniki, szarlotki, brownie, rolady, tarty — wypieki, do których chce się wracać. Idealne do kawy i na rodzinne spotkania.
+            </p>
+            <ul>
+              <li>Sprawdzone receptury</li>
+              <li>Świeże składniki</li>
+              <li>Porcje dopasowane do potrzeb</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Świąteczne klasyki</h3>
+            <p>
+              Na Boże Narodzenie, Wielkanoc i inne święta przygotowuję tradycyjne wypieki — w tym makowiec, który pachnie domem.
+            </p>
+            <ul>
+              <li>Makowiec, serniki, mazurki</li>
+              <li>Wypieki na zamówienie z wyprzedzeniem</li>
+              <li>Smaki, które budują wspomnienia</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section alt" id="o-mnie">
+      <div class="wrap about">
+        <div class="about-text">
+          <h2>O mnie</h2>
+          <p>
+            Nazywam się Asia i pieczenie jest moją pasją od dzieciństwa. Zawsze wierzyłam, że najlepsze wypieki powstają wtedy,
+            gdy robi się je z uważnością i sercem — bez pośpiechu, za to z miłością do smaku i ludzi.
+          </p>
+          <p>
+            Nie jestem przemysłową cukiernią. Każdy tort i każde ciasto przygotowuję ręcznie, w domowym rytmie: od doboru składników,
+            przez pieczenie, aż po dekorację. Dbam o to, żeby było pysznie, świeżo i pięknie.
+          </p>
+          <p class="highlight">
+            Lubisz nietypowe połączenia smaków albo masz własny pomysł? Uwielbiam wyzwania — opowiedz mi o okazji,
+            a wspólnie wymyślimy coś wyjątkowego.
+          </p>
+        </div>
+
+        <div class="about-media">
+          <!-- Tip: Use a portrait-style photo or a baking scene -->
+          <img src="assets/images/about.jpg" alt="Domowe wypieki przygotowywane z pasją" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="section" id="galeria">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Galeria</h2>
+          <p>Przykładowe realizacje. Każdy wypiek może wyglądać inaczej — dopasuję styl do Twojej wizji.</p>
+        </header>
+
+        <!-- Tip: Add/remove items freely. Keep filenames simple. -->
+        <div class="gallery">
+          <figure class="shot">
+            <img src="assets/images/1.jpg" alt="Tort urodzinowy" />
+            <figcaption>Tort urodzinowy</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/images/2.jpg" alt="Ciasto z owocami" />
+            <figcaption>Ciasto z owocami</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/images/3.jpg" alt="Makowiec" />
+            <figcaption>Makowiec</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/images/4.jpg" alt="Sernik" />
+            <figcaption>Sernik</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/images/5.jpg" alt="Tarta" />
+            <figcaption>Tarta</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/images/6.jpg" alt="Wypieki na stół" />
+            <figcaption>Słodki stół</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ORDER PROCESS ========== -->
+    <section class="section alt" id="zamowienia">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Zamówienia</h2>
+          <p>Prosty proces — żebyś mógł/mogła spokojnie czekać na efekt.</p>
+        </header>
+
+        <ol class="steps">
+          <li>
+            <h3>1) Napisz wiadomość</h3>
+            <p>Podaj okazję, datę, liczbę porcji oraz preferencje smakowe (np. czekolada, owoce, wanilia).</p>
+          </li>
+          <li>
+            <h3>2) Ustalamy szczegóły</h3>
+            <p>Wspólnie doprecyzujemy wygląd, smak, dodatki i ewentualne alergie. Doradzę najlepsze rozwiązania.</p>
+          </li>
+          <li>
+            <h3>3) Wypiek i odbiór</h3>
+            <p>W umówionym terminie wypiek jest gotowy. Otrzymujesz świeży produkt, przygotowany specjalnie dla Ciebie.</p>
+          </li>
+        </ol>
+
+        <div class="note">
+          <p><strong>Wskazówka:</strong> Przy większych okazjach i terminach świątecznych warto napisać wcześniej — wtedy mam więcej przestrzeni na dopracowanie detali.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="kontakt">
+      <div class="wrap contact">
+        <div class="contact-text">
+          <h2>Kontakt</h2>
+          <p>
+            Chcesz zamówić tort, makowiec albo coś zupełnie nowego? Napisz do mnie — odpowiem i pomogę dobrać najlepszą opcję.
+          </p>
+
+          <!-- Replace placeholders with real data -->
+          <ul class="contact-list">
+            <li><strong>Instagram:</strong> <a href="#" target="_blank" rel="noopener">ciasta_joasi</a></li>
+            <li><strong>E-mail:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><strong>Telefon:</strong> <a href="tel:+48000000000">+48 000 000 000</a></li>
+            <li><strong>Lokalizacja:</strong> Poznań i okolice (przykład)</li>
+          </ul>
+
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:hello@example.com">Napisz e-mail</a>
+            <a class="btn" href="#galeria">Zobacz wypieki</a>
+          </div>
+        </div>
+
+        <!-- Optional block for opening hours / notes -->
+        <aside class="contact-card" aria-label="Informacje dodatkowe">
+          <h3>Informacje</h3>
+          <p>
+            Wszystkie wypieki wykonuję na zamówienie. Dzięki temu są świeże, dopracowane i przygotowane dokładnie pod Twoją okazję.
+          </p>
+          <p class="small">
+            *Tekst i dane są przykładowe — podmień je na swoje.
+          </p>
+        </aside>
+      </div>
+    </section>
   </main>
 
+  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
-    <div class="wrap">
-      <p>Kontakt: cukiernia@example.com • Poznań</p>
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Ciasta Joasi • Domowe wypieki</p>
+      <a href="#top" class="backtop">Do góry ↑</a>
     </div>
   </footer>
+
+  <!-- Tiny JS just to keep the year current (optional). You can remove this if you prefer. -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
