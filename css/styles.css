@@ -80,8 +80,18 @@ body{
   border-radius: 999px;
   border:1px solid var(--border);
 }
-.logo { display: inline-flex; align-items: center; gap: .5rem; }
-.logo-icon { width: 24px; height: 24px; }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;              /* space between icon and text */
+  font-size: 1.15rem;      /* slightly larger text */
+  font-weight: 800;
+}
+
+.logo-icon {
+  width: 26px;
+  height: 26px;
+}
 
 /* Mobile nav spacing */
 @media (max-width: 720px){
