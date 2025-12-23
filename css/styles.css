@@ -80,6 +80,8 @@ body{
   border-radius: 999px;
   border:1px solid var(--border);
 }
+.logo { display: inline-flex; align-items: center; gap: .5rem; }
+.logo-icon { width: 24px; height: 24px; }
 
 /* Mobile nav spacing */
 @media (max-width: 720px){
