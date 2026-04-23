@@ -65,3 +65,25 @@ if (document.querySelector('.gallery-swiper')) {
 if (typeof GLightbox !== 'undefined') {
   GLightbox({ selector: '.glightbox' });
 }
+
+// Scrollspy — highlight the nav link for the currently visible section
+const navSectionIds = ['oferta', 'o-mnie', 'galeria', 'zamowienia', 'kontakt'];
+const allNavLinks = [
+  ...document.querySelectorAll('.main-nav a[href^="#"]'),
+  ...document.querySelectorAll('.mobile-nav a[href^="#"]'),
+];
+
+function updateActiveNav() {
+  const scrollY = window.scrollY;
+  let activeId = null;
+  navSectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top <= 120) activeId = id;
+  });
+  allNavLinks.forEach(a => {
+    a.classList.toggle('nav-cta', a.getAttribute('href') === '#' + activeId);
+  });
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
