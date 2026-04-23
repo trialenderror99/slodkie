@@ -217,12 +217,10 @@ body{
 }
 
 .lead {
-  margin: 0 0 1.5rem;
+  margin: 0 auto 1.5rem;
   color: var(--muted);
   font-size: 1rem;
   max-width: 52ch;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.6;
 }
 
