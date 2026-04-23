@@ -18,6 +18,16 @@ if (hamburger && mobileNav) {
       mobileNav.classList.remove('open');
     });
   });
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') &&
+        !mobileNav.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Otwórz menu');
+      mobileNav.classList.remove('open');
+    }
+  });
 }
 
 // Hero strip Swiper — wired up in Task 4

@@ -41,6 +41,10 @@ body{
 .section{ padding: 4rem 0; }
 .section.alt{ background: var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
 
+@media (max-width: 560px) {
+  .section { padding: 2.5rem 0; }
+}
+
 .section-head{
   max-width: 720px;
   margin-bottom: 1.75rem;
