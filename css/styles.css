@@ -15,7 +15,8 @@
   --radius: 14px;
   --wrap: 1100px;
   --font-serif: Georgia, 'Times New Roman', serif;
-  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;
+  --text-on-accent: #1b120b;
 }
 
 *{ box-sizing:border-box; }
@@ -180,7 +181,7 @@ body{
 .btn.primary{
   background: var(--accent);
   border-color: transparent;
-  color:#1b120b;
+  color: var(--text-on-accent);
 }
 
 .hero-bullets{
