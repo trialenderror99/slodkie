@@ -417,7 +417,7 @@ body{
   transition: transform .35s ease;
 }
 
-.gallery-swiper .swiper-slide img:hover {
+.gallery-swiper .swiper-slide a:hover img {
   transform: scale(1.04);
 }
 
