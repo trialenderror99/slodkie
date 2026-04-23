@@ -5,7 +5,7 @@
 ========================================================= */
 :root{
   --bg:#ffffff;
-  --bg-alt:#fbfaf8;
+  --bg-alt:#fdf9f5;
   --text:#1f1f1f;
   --muted:#5f5f5f;
   --border:#ece7e2;
@@ -14,13 +14,15 @@
   --shadow: 0 10px 24px rgba(0,0,0,.08);
   --radius: 14px;
   --wrap: 1100px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
 }
 
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 body{
   margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+  font-family: var(--font-sans);
   background:var(--bg);
   color:var(--text);
   line-height:1.55;
@@ -42,8 +44,23 @@ body{
   max-width: 720px;
   margin-bottom: 1.75rem;
 }
-.section-head h2{ margin: 0 0 .4rem; font-size: clamp(1.4rem, 2.5vw, 2rem); }
+.section-head h2 {
+  margin: 0 0 .4rem;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
 .section-head p{ margin:0; color:var(--muted); }
+
+.section-label {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
 
 /* =========================================================
    HEADER
@@ -62,11 +79,17 @@ body{
   justify-content:space-between;
   min-height:64px;
 }
-.logo{
-  text-decoration:none;
-  color:var(--text);
-  font-weight:800;
-  letter-spacing:.2px;
+.logo {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent-2);
+  letter-spacing: 0;
 }
 .main-nav a{
   text-decoration:none;
@@ -75,17 +98,18 @@ body{
   font-weight:600;
 }
 .main-nav a:hover{ color:var(--text); }
-.nav-cta{
-  padding:.5rem .75rem;
+.nav-cta {
+  padding: .45rem 1rem;
   border-radius: 999px;
-  border:1px solid var(--border);
+  border: none;
+  background: var(--accent);
+  color: #1b120b;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: .6rem;              /* space between icon and text */
-  font-size: 1.15rem;      /* slightly larger text */
-  font-weight: 800;
+.nav-cta:hover {
+  background: var(--accent-2);
+  color: #fff;
 }
 
 .logo-icon {
