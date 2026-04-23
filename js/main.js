@@ -74,12 +74,16 @@ const allNavLinks = [
 ];
 
 function updateActiveNav() {
-  const scrollY = window.scrollY;
   let activeId = null;
-  navSectionIds.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && el.getBoundingClientRect().top <= 120) activeId = id;
-  });
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
+  if (atBottom) {
+    activeId = navSectionIds[navSectionIds.length - 1];
+  } else {
+    navSectionIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= 120) activeId = id;
+    });
+  }
   allNavLinks.forEach(a => {
     a.classList.toggle('nav-cta', a.getAttribute('href') === '#' + activeId);
   });
