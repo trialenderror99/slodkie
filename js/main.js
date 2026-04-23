@@ -8,6 +8,7 @@ if (hamburger && mobileNav) {
   hamburger.addEventListener('click', () => {
     const open = hamburger.classList.toggle('open');
     hamburger.setAttribute('aria-expanded', String(open));
+    hamburger.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
     mobileNav.classList.toggle('open', open);
   });
   mobileNav.querySelectorAll('a').forEach(a => {

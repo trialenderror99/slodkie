@@ -104,7 +104,7 @@ body{
   border-radius: 999px;
   border: none;
   background: var(--accent);
-  color: #1b120b;
+  color: var(--text-on-accent);
   font-weight: 700;
   font-size: 0.9rem;
 }
@@ -137,10 +137,15 @@ body{
 
 .mobile-nav {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   flex-direction: column;
   background: rgba(255,253,250,.98);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  z-index: 49;
 }
 .mobile-nav.open { display: flex; }
 .mobile-nav a {
