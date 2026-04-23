@@ -171,36 +171,65 @@
     <section class="section" id="galeria">
       <div class="wrap">
         <header class="section-head">
+          <span class="section-label">Realizacje</span>
           <h2>Galeria</h2>
-          <p>Przykładowe realizacje. Każdy wypiek może wyglądać inaczej — dopasuję styl do Twojej wizji.</p>
+          <p>Przykładowe realizacje. Każdy wypiek może wyglądać inaczej — dopasuję styl do Twojej wizji. Kliknij zdjęcie, żeby zobaczyć w pełnym rozmiarze.</p>
         </header>
 
-        <!-- Tip: Add/remove items freely. Keep filenames simple. -->
-        <div class="gallery">
-          <figure class="shot">
-            <img src="assets/images/1.jpg" alt="Tort urodzinowy" />
-            <figcaption>Tort urodzinowy</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/images/2.jpg" alt="Ciasto z owocami" />
-            <figcaption>Ciasto z owocami</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/images/3.jpg" alt="Makowiec" />
-            <figcaption>Makowiec</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/images/4.jpg" alt="Sernik" />
-            <figcaption>Sernik</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/images/5.jpg" alt="Tarta" />
-            <figcaption>Tarta</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/images/6.jpg" alt="Wypieki na stół" />
-            <figcaption>Słodki stół</figcaption>
-          </figure>
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/1.jpg" data-gallery="gallery" data-description="Tort urodzinowy">
+                <img src="assets/images/1.jpg" alt="Tort urodzinowy" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/2.jpg" data-gallery="gallery" data-description="Ciasto z owocami">
+                <img src="assets/images/2.jpg" alt="Ciasto z owocami" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/3.jpg" data-gallery="gallery" data-description="Makowiec">
+                <img src="assets/images/3.jpg" alt="Makowiec" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/4.jpg" data-gallery="gallery" data-description="Sernik">
+                <img src="assets/images/4.jpg" alt="Sernik" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/5.jpg" data-gallery="gallery" data-description="Tarta">
+                <img src="assets/images/5.jpg" alt="Tarta" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/6.jpg" data-gallery="gallery" data-description="Słodki stół">
+                <img src="assets/images/6.jpg" alt="Wypieki na stół" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/piece1.jpg" data-gallery="gallery" data-description="Wypiek domowy">
+                <img src="assets/images/piece1.jpg" alt="Wypiek domowy" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/piece2.jpg" data-gallery="gallery" data-description="Ciasto na zamówienie">
+                <img src="assets/images/piece2.jpg" alt="Ciasto na zamówienie" loading="lazy" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="glightbox" href="assets/images/piece3.jpg" data-gallery="gallery" data-description="Tort">
+                <img src="assets/images/piece3.jpg" alt="Tort" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="gallery-prev" aria-label="Poprzednie zdjęcie">‹</button>
+          <div class="gallery-pagination"></div>
+          <button class="gallery-next" aria-label="Następne zdjęcie">›</button>
         </div>
       </div>
     </section>
