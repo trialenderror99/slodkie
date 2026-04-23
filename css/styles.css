@@ -591,3 +591,9 @@ body{
   font-weight:700;
 }
 .backtop:hover{ color:var(--text); }
+.footer-brand {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent-2);
+  font-size: 1rem;
+}
