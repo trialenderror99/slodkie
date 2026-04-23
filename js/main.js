@@ -1,4 +1,5 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Hamburger nav — wired up in Task 3
 const hamburger = document.querySelector('.hamburger');
